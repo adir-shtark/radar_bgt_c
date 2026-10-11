@@ -1,0 +1,45 @@
+# Generated Vivado projects. Recreate with vivado/build.tcl.
+# The bitstream in bitstream/ comes from the last build, vivado_proj_vga4.
+# Older trees (vivado_proj, vivado_proj_gain, vivado_proj_hold) are obsolete.
+vivado_proj/
+vivado_proj_*/
+
+# Vivado journals, logs, and backup copies (repo root and reports/)
+*.jou
+*.log
+*.str
+*.backup.jou
+*.backup.log
+*.tmp
+webtalk*
+.Xil/
+*.pb
+
+# Icarus / xsim products
+sim/
+*.vcd
+*.wdb
+*.vvp
+xsim.dir/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Editor and OS
+.cursor/
+.vscode/
+Thumbs.db
+Desktop.ini
+*.swp
+
+# Infineon manuals are copyrighted vendor PDFs. Keep them locally;
+# they are not part of the source needed to rebuild the design.
+docs/*.pdf
+
+# Audits of an older build (timing not met). The reports/*.rpt files
+# are from the vivado_proj_vga4 implementation.
+reports/QUALITY_GATE.md
+reports/VIVADO_AUDIT_REPORT.md
